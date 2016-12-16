@@ -1,0 +1,35 @@
+{
+  "name": "@wildpeaks/preact-render-dom",
+  "version": "2.1.0",
+  "description": "Renders a Preact component in the DOM",
+  "main": "src/render.js",
+  "files": [
+    "src/render.js",
+    "test/render.tests.js"
+  ],
+  "scripts": {
+    "test": "mocha -r jsdom-global/register test/*.js"
+  },
+  "repository": "https://github.com/wildpeaks/package-preact-render-dom",
+  "keywords": [
+    "wildpeaks",
+    "preact",
+    "render"
+  ],
+  "author": "Cecile Muller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wildpeaks/package-preact-render-dom/issues"
+  },
+  "homepage": "https://github.com/wildpeaks/package-preact-render-dom#readme",
+  "peerDependencies": {
+    "preact": "^7.1.0"
+  },
+  "devDependencies": {
+    "jsdom": "^9.8.3",
+    "jsdom-global": "^2.1.0",
+    "mocha": "^3.2.0",
+    "preact": "^7.1.0",
+    "@wildpeaks/snapshot-dom": "latest"
+  }
+}
