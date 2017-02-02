@@ -1,14 +1,19 @@
 {
   "name": "@wildpeaks/preact-render-dom",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Renders a Preact component in the DOM",
   "main": "src/render.js",
   "files": [
     "src/render.js",
     "test/render.tests.js"
   ],
+  "eslintConfig": {
+    "extends": "@wildpeaks/commonjs"
+  },
   "scripts": {
-    "test": "mocha -r jsdom-global/register test/*.js"
+    "test:eslint": "eslint src",
+    "test:mocha": "mocha -r jsdom-global/register test/*.js",
+    "test": "npm run test:eslint && npm run test:mocha"
   },
   "repository": "https://github.com/wildpeaks/package-preact-render-dom",
   "keywords": [
@@ -23,13 +28,15 @@
   },
   "homepage": "https://github.com/wildpeaks/package-preact-render-dom#readme",
   "peerDependencies": {
-    "preact": "^7.1.0"
+    "preact": ">=7.1.0"
   },
   "devDependencies": {
-    "jsdom": "^9.8.3",
-    "jsdom-global": "^2.1.0",
-    "mocha": "^3.2.0",
-    "preact": "^7.1.0",
-    "@wildpeaks/snapshot-dom": "latest"
+  	"eslint": "3.14.1",
+    "jsdom": "9.8.3",
+    "jsdom-global": "2.1.0",
+    "mocha": "3.2.0",
+    "preact": "7.1.0",
+    "@wildpeaks/eslint-config-commonjs": "1.1.0",
+    "@wildpeaks/snapshot-dom": "1.2.1"
   }
 }
