@@ -33,7 +33,6 @@
   "devDependencies": {
     "@types/jasmine": "2.8.3",
     "@types/node": "9.3.0",
-    "@types/preact": "",
     "@wildpeaks/eslint-config-typescript": "4.3.0",
     "@wildpeaks/snapshot-dom": "1.2.1",
     "eslint": "4.15.0",
