@@ -8,9 +8,16 @@ Install:
 
 	npm install @wildpeaks/preact-render-dom
 
-Usage:
+Example:
+````ts
+import {h} from 'preact';
+import {render} from '@wildpeaks/preact-render-dom';
 
-	const MyComponent = require('components/MyComponent');
-	const render = require('@wildpeaks/preact-render-dom');
+interface MyProps {
+	href: string;
+}
 
-	render(document.body, MyComponent, props);
+const container = document.createElement('div');
+const MyComponent: preact.FunctionalComponent<MyProps> = (props: MyProps) => h('a', props);
+render<MyProps>(container, MyComponent, {href: 'stateless'});
+````
