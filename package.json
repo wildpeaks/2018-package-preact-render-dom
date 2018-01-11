@@ -1,23 +1,22 @@
 {
   "name": "@wildpeaks/preact-render-dom",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "description": "Renders a Preact component in the DOM",
-  "main": "src/render.js",
+  "main": "src/render.ts",
+  "types": "src/render.ts",
   "files": [
-    "src/render.js",
-    "test/render.tests.js"
+    "src"
   ],
   "eslintConfig": {
-    "extends": "@wildpeaks/commonjs"
+    "extends": "@wildpeaks/typescript"
   },
   "scripts": {
-    "test:eslint": "eslint src",
-    "test:mocha": "mocha -r jsdom-global/register test/*.js",
-    "test": "npm run test:eslint && npm run test:mocha"
+    "test": "jasmine --helper=jasmine.typescript.js test/*.spec.ts"
   },
   "repository": "https://github.com/wildpeaks/package-preact-render-dom",
   "keywords": [
     "wildpeaks",
+    "typescript",
     "preact",
     "render"
   ],
@@ -28,15 +27,20 @@
   },
   "homepage": "https://github.com/wildpeaks/package-preact-render-dom#readme",
   "peerDependencies": {
-    "preact": ">=7.1.0"
+    "preact": "*",
+    "typescript": "*"
   },
   "devDependencies": {
-  	"eslint": "3.14.1",
-    "jsdom": "9.8.3",
-    "jsdom-global": "2.1.0",
-    "mocha": "3.2.0",
-    "preact": "7.1.0",
-    "@wildpeaks/eslint-config-commonjs": "1.1.0",
-    "@wildpeaks/snapshot-dom": "1.2.1"
+    "@types/jasmine": "2.8.3",
+    "@types/node": "9.3.0",
+    "@types/preact": "",
+    "@wildpeaks/eslint-config-typescript": "4.3.0",
+    "@wildpeaks/snapshot-dom": "1.2.1",
+    "eslint": "4.15.0",
+    "jasmine": "2.8.0",
+    "jsdom": "11.5.1",
+    "preact": "8.2.7",
+    "ts-node": "4.1.0",
+    "typescript": "2.6.2"
   }
 }
