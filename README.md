@@ -1,6 +1,6 @@
 # Render to DOM
 
-[![Build Status](https://travis-ci.org/wildpeaks/package-preact-render-dom.svg?branch=master)](https://travis-ci.org/wildpeaks/package-preact-render-dom) [![Greenkeeper badge](https://badges.greenkeeper.io/wildpeaks/package-preact-render-dom.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/wildpeaks/package-preact-render-dom.svg)](https://greenkeeper.io/)
 
 **Renders a Preact component** in the DOM, similar to `@wildpeaks/react-render-dom`.
 
