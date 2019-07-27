@@ -31,7 +31,7 @@
     "typescript": "*"
   },
   "devDependencies": {
-    "@types/jasmine": "3.3.15",
+    "@types/jasmine": "3.3.16",
     "@types/node": "12.6.7",
     "@wildpeaks/eslint-config-typescript": "6.2.0",
     "@wildpeaks/snapshot-dom": "1.4.0",
