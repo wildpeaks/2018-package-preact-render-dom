@@ -36,7 +36,7 @@
     "@wildpeaks/eslint-config-typescript": "7.0.0",
     "@wildpeaks/snapshot-dom": "1.4.0",
     "eslint": "6.4.0",
-    "jasmine": "3.4.0",
+    "jasmine": "3.5.0",
     "jsdom": "15.1.1",
     "preact": "8.5.2",
     "ts-node": "8.4.1",
